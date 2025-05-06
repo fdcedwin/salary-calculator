@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salary Breakdown</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Salary Breakdown</h1>
+    <input type="number" id="salary" placeholder="Enter your salary (PHP)" />
+    <button onclick="calculateBreakdown()">Calculate</button>
+
+    <div id="result" class="hidden">
+      <h2>Breakdown</h2>
+      <ul>
+        <li><span>Essentials (~46.37%)</span> <span id="essentials"></span></li>
+        <li><span>Savings (~9.27%)</span> <span id="savings"></span></li>
+        <li><span>Miscellaneous (~9.27%)</span> <span id="misc"></span></li>
+        <li><span>Extra (~9.27%)</span> <span id="extra1"></span></li>
+        <li><span>Investment (25.81%)</span> <span id="investment"></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
